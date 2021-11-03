@@ -85,22 +85,35 @@ p {
   margin: 20px;
 }
 
+.content h2 {
+  color: orange;
+}
+
 .about-style {
   margin-bottom: 20px;
   padding: 50px;
-  background-color: #0072bb;
   color: #ffffff;
+  border: 5px solid;
+  border-radius: 25px;
 }
 
 .work-app {
   margin-bottom: 20px;
   padding: 50px;
-  background-color: #0072bb;
   color: #ffffff;
 }
 .work-app img {
   transition: all 0.2s ease-in-out;
   border: 5px solid darkmagenta;
+}
+
+.contact-style {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 250px;
+  color: #ffffff;
+  border: 5px solid;
+  border-radius: 25px;
 }
 
 figure a {
@@ -125,6 +138,16 @@ figure a {
   visibility: visible;
 }
 
+i:hover {
+  transform: scale(1.15);
+}
+
+.fa-3x {
+  border: 5px solid white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
 figure {
   display: flex;
   justify-content: space-evenly;
@@ -141,18 +164,11 @@ figure {
   color: #ffffff;
 }
 
-.contact-style {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 250px;
-  background-color: #0072bb;
-  color: #ffffff;
-}
-
 .about-style img {
   max-height: 200px;
   max-width: 100%;
   border: 5px solid darkmagenta;
+  border-radius: 25px;
 }
 
 .work-app img {
@@ -173,7 +189,7 @@ h2 {
   padding: 30px;
   clear: both;
   text-align: center;
-  color: #ffffff;
+  color: orange;
 }
 
 h3 {
@@ -226,11 +242,4 @@ h3 {
     position: relative;
     top: 500px;
   }
-
-  /* .icon-container {
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-  } */
 }
