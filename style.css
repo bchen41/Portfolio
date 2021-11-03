@@ -8,7 +8,7 @@ body {
   background-color: #0c0b07;
 }
 
-.first-header {
+header {
   display: flex;
   padding: 25px;
   background-color: #425d71;
@@ -17,25 +17,25 @@ body {
   color: #ffffff;
 }
 
-.first-header h1 {
+header h1 {
   display: inline-block;
   font-size: 50px;
 }
 
-.first-header nav {
+header nav {
   display: flex;
   align-items: center;
   margin-right: 20px;
   font-size: 25px;
 }
 
-.first-header nav ul {
+header nav ul {
   list-style-type: none;
   flex-wrap: wrap;
   display: flex;
 }
 
-.first-header nav ul li {
+header nav ul li {
   display: inline-block;
   margin-left: 25px;
 }
@@ -49,11 +49,7 @@ nav a:hover {
   color: orange;
 }
 
-p {
-  font-size: 22px;
-}
-
-.container {
+.background-container {
   height: 800px;
   width: 100%;
   margin-bottom: 25px;
@@ -62,7 +58,7 @@ p {
   background-position: center;
 }
 
-.centered {
+.centered-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -71,9 +67,31 @@ p {
   text-align: center;
 }
 
-.float-left {
-  float: left;
-  margin-right: 25px;
+.content-container {
+  margin: 20px;
+}
+
+.content-container h2 {
+  color: orange;
+}
+
+p {
+  font-size: 22px;
+}
+
+#about-me {
+  margin-bottom: 20px;
+  padding: 50px;
+  color: #ffffff;
+  border: 5px solid;
+  border-radius: 25px;
+}
+
+#about-me img {
+  max-height: 200px;
+  max-width: 100%;
+  border: 5px solid darkmagenta;
+  border-radius: 25px;
 }
 
 .float-right {
@@ -81,71 +99,15 @@ p {
   margin-left: 25px;
 }
 
-.content {
-  margin: 20px;
+h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
 }
 
-.content h2 {
-  color: orange;
-}
-
-.about-style {
+#works {
   margin-bottom: 20px;
   padding: 50px;
   color: #ffffff;
-  border: 5px solid;
-  border-radius: 25px;
-}
-
-.work-app {
-  margin-bottom: 20px;
-  padding: 50px;
-  color: #ffffff;
-}
-.work-app img {
-  transition: all 0.2s ease-in-out;
-  border: 5px solid darkmagenta;
-}
-
-.contact-style {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 250px;
-  color: #ffffff;
-  border: 5px solid;
-  border-radius: 25px;
-}
-
-figure a {
-  text-decoration: none;
-}
-
-.work-app img:hover {
-  transform: scale(1.15);
-}
-
-.works-header {
-  visibility: hidden;
-  font-size: 25px;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  color: #ffffff;
-  text-align: center;
-  padding: 25px 0 0 0;
-}
-
-.work-app a:hover .works-header {
-  visibility: visible;
-}
-
-i:hover {
-  transform: scale(1.15);
-}
-
-.fa-3x {
-  border: 5px solid white;
-  border-radius: 50%;
-  padding: 10px;
 }
 
 figure {
@@ -153,6 +115,44 @@ figure {
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 0 0 20px 0;
+}
+
+figure a {
+  text-decoration: none;
+}
+
+#works img {
+  transition: all 0.2s ease-in-out;
+  border: 5px solid darkmagenta;
+  max-height: 300px;
+  max-width: 100%;
+}
+
+#works img:hover {
+  transform: scale(1.15);
+}
+
+figcaption {
+  visibility: hidden;
+  font-size: 25px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: orange;
+  text-align: center;
+  padding: 25px 0 0 0;
+}
+
+#works a:hover figcaption {
+  visibility: visible;
+}
+
+#contact-me {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 250px;
+  color: #ffffff;
+  border: 5px solid;
+  border-radius: 25px;
 }
 
 .icon-container {
@@ -164,28 +164,17 @@ figure {
   color: #ffffff;
 }
 
-.about-style img {
-  max-height: 200px;
-  max-width: 100%;
+i:hover {
+  transform: scale(1.15);
+}
+
+.fa-3x {
   border: 5px solid darkmagenta;
-  border-radius: 25px;
+  border-radius: 50%;
+  padding: 10px;
 }
 
-.work-app img {
-  max-height: 300px;
-  max-width: 100%;
-}
-
-.social-media-marketing img {
-  max-height: 200px;
-}
-
-h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.footer {
+footer {
   padding: 30px;
   clear: both;
   text-align: center;
@@ -198,17 +187,14 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+  main,
   nav ul li {
-    flex-direction: column;
-  }
-
-  main {
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 721px) {
-  .first-header {
+  header {
     flex-direction: column;
     align-items: center;
     display: flex;
@@ -220,13 +206,7 @@ h3 {
 }
 
 @media screen and (max-width: 495px) {
-  .first-header {
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
+  header,
   ul {
     flex-direction: column;
     align-items: center;
@@ -238,7 +218,7 @@ h3 {
     padding: 10px;
   }
 
-  .centered {
+  .centered-text {
     position: relative;
     top: 500px;
   }
