@@ -100,22 +100,29 @@ p {
 }
 .work-app img {
   transition: all 0.2s ease-in-out;
+  border: 5px solid darkmagenta;
+}
+
+figure a {
+  text-decoration: none;
 }
 
 .work-app img:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 .works-header {
-  display: none;
+  visibility: hidden;
+  font-size: 25px;
   justify-content: space-evenly;
   flex-wrap: wrap;
   color: #ffffff;
   text-align: center;
+  padding: 25px 0 0 0;
 }
 
 .work-app a:hover .works-header {
-  display: block;
+  visibility: visible;
 }
 
 figure {
@@ -145,6 +152,7 @@ figure {
 .about-style img {
   max-height: 200px;
   max-width: 100%;
+  border: 5px solid darkmagenta;
 }
 
 .work-app img {
