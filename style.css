@@ -86,6 +86,7 @@ nav a:hover {
 
 .content-container h2 {
   color: var(--orange);
+  text-decoration: underline;
 }
 
 p {
@@ -115,7 +116,6 @@ p {
 h2 {
   margin-bottom: 20px;
   font-size: 36px;
-  text-decoration: underline;
 }
 
 #works {
