@@ -14,7 +14,7 @@ Used template from Code Refactoring Project to create the base of HTML and CSS. 
 
 ## **Screenshot**
 
-<img src="portfolio.png" alt="Screenshot of Portfolio" width="auto" height="600"/>
+<img src="./assets/images/portfolio.png" alt="Screenshot of Portfolio" width="auto" height="600"/>
 
 ## **Github Page Link**
 
