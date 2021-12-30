@@ -24,9 +24,21 @@ header {
   background-color: var(--grayBlue);
 }
 
+nav {
+  font-family: Times;
+}
+
 .navbar-brand {
   display: inline-block;
   font-size: 50px;
+}
+
+.navbar-light .navbar-brand {
+  color: var(--white);
+}
+
+.navbar-light .navbar-brand:hover {
+  color: var(--white);
 }
 
 .nav-item {
@@ -35,6 +47,10 @@ header {
 
 .nav-item::before {
   content: "💫";
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--white);
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
