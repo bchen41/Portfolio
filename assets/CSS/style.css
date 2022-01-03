@@ -101,15 +101,15 @@ h2 {
 #contact-me {
   margin-bottom: 20px;
   padding: 50px;
-  color: var(--white);
-  border: 5px solid;
   border-radius: 25px;
+  text-align: center;
 }
 
 .icon-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding-top: 20px;
 }
 
 .icon-container a {
@@ -175,11 +175,12 @@ h3 {
   transform: scale(1.15);
 }
 #cards_landscape_wrap-2 .card-flyer .text-box {
-  text-align: center;
+  align-items: center;
 }
 #cards_landscape_wrap-2 .card-flyer .text-box .text-container {
   padding: 30px 18px;
 }
+
 #cards_landscape_wrap-2 .card-flyer {
   margin-top: 50px;
   -webkit-transition: all 0.2s ease-in;
@@ -188,7 +189,7 @@ h3 {
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-#cards_landscape_wrap-2 .card-flyer:hover {
+#cards_landscape_wrap-2 .card-flyer {
   background: #fff;
   box-shadow: 0px 15px 26px rgba(232, 139, 255, 0.959);
   -webkit-transition: all 0.2s ease-in;
@@ -199,10 +200,6 @@ h3 {
   margin-top: 50px;
 }
 
-#cards_landscape_wrap-2 .card-flyer:hover .text-box p {
-  visibility: visible;
-}
-
 #cards_landscape_wrap-2 .card-flyer .text-box p {
   margin-top: 10px;
   margin-bottom: 0px;
@@ -210,7 +207,6 @@ h3 {
   font-size: 14px;
   letter-spacing: 1px;
   color: var(--black);
-  visibility: hidden;
 }
 
 #cards_landscape_wrap-2 .card-flyer .text-box a {
