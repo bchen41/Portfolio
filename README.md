@@ -1,16 +1,14 @@
 # **Portfolio**
 
+![badge](https://img.shields.io/badge/license-MIT-blue)
+
 ## **Description**
 
-Making my first professional portfolio.
+Made my first professional portfolio using HTML, CSS and then updated with Bootstrap along the way. From not knowing a thing about coding, I made sure that the navigation bar lead to the right sections, used the correct HTML semantics, provided the right links to my works, paid attention to responsive design, and presented a polished UI for my audience.
 
-**HTML, CSS, and Normalize CSS**
+- **HTML** - Codes were changed/added to resemble a portfolio. Images with their alt tag were added. My name, picture, and navigation bar with functioning links to "about me", "works", "contact me", and "resume" are presented.
 
-Used template from Code Refactoring Project to create the base of HTML and CSS. Found a template for normalized css online. Peformed code refactoring according to my needs and its functionality.
-
-- **HTML** - Codes were changed/added to resemble a portfolio. Images with their alt tag were added for aesthetic and represent Works Applications. My name, placeholder image (to be updated in future), navigation bar with functioning links to "about me", "works", and "contact me" are presented.
-
-- **CSS** - Selectors were modified accordingly to the HTML file. Advanced CSS, such as Media Query, Pseudo-Classes and Pseudo-Elements were used to style the website and make it responsive across all devices and browsers. Images enlarge and title displays when hovered over with mouse cursor. Link to deployed works application directs user to different tab. Media query has been added to present a responsive layout on various screens and devices.
+- **CSS** - Selectors were modified accordingly to the HTML file. Advanced CSS, such as Pseudo-Classes and Pseudo-Elements were used to style the website. Images enlarge and title displays when hovered over with mouse cursor. Link to deployed works application directs user to different tab. Media query has been replaced with Bootstra to make it responsive across all devices and browsers
 
 ## **Screenshot**
 
@@ -19,5 +17,9 @@ Used template from Code Refactoring Project to create the base of HTML and CSS. 
 ## **Github Page Link**
 
 [Link to Github Page!](https://bchen41.github.io/Portfolio/)
+
+## **License**
+
+[Link to MIT License](https://github.com/bchen41/Portfolio/blob/main/LICENSE)
 
 Author: Betty Chen
